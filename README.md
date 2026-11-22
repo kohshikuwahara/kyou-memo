@@ -17,7 +17,7 @@ kadai02 - きょうの様子メモ
 
 ## ③DEMO
 
-https://ユーザー名.github.io/kyou-memo/
+https://kohshikuwahara.github.io/kyou-memo/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
