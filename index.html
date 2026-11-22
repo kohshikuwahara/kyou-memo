@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>きょうの様子メモ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>きょうの様子メモ</h1>
+
+  <input type="date" id="date">
+  <div id="attend-choices"></div>
+  <textarea id="memo" placeholder="今日の様子"></textarea>
+  <button id="save-btn">保存</button>
+<h2>曜日別</h2>
+<div id="legend"></div>
+<div id="weekday-chart"></div>
+
+<h2>週ごとの推移</h2>
+<div id="weekly-chart"></div>
+
+<h2>記録</h2>
+  <div id="list"></div>
+<button id="clear-btn">全部消す</button>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

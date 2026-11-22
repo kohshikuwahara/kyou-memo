@@ -1,0 +1,143 @@
+/* 全体 */
+body {
+  max-width: 480px;          /* スマホくらいの幅にそろえる */
+  margin: 0 auto;            /* 真ん中に寄せる */
+  padding: 16px;
+  font-family: sans-serif;
+  background: #f7f5f0;
+  color: #333;
+}
+
+h1 {
+  font-size: 22px;
+  color: #5b7f6e;
+}
+
+/* 入力欄 */
+input[type="date"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;    /* 枠線ぶんはみ出さないように */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 80px;
+}
+
+/* 選択肢をボタン風にする */
+#attend-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+#attend-choices label {
+  padding: 6px 14px;
+  border: 1px solid #5b7f6e;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+}
+
+#attend-choices input {
+  display: none;             /* 丸いボタンを隠す */
+}
+
+/* 選ばれているものを緑にする */
+#attend-choices label:has(input:checked) {
+  background: #5b7f6e;
+  color: #fff;
+}
+
+/* ボタン */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #5b7f6e;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#clear-btn {
+  background: #bbb;
+  margin-top: 16px;
+}
+
+/* 記録一覧をカードにする */
+#list p {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #e6b3b3;
+}
+
+/* グラフ */
+h2 {
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.bar-label {
+  width: 56px;
+  font-size: 14px;
+}
+
+.bar-bg {
+  flex: 1;
+  display: flex;
+  height: 18px;
+  background: #e8e6e0;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.seg {
+  height: 100%;
+}
+
+.bar-count {
+  width: 40px;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* 凡例 */
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 4px;
+}
